@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Настройки страницы -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мир Путешествий — контакты</title>
+
+    <!-- Подключение общего CSS-файла -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <!-- Шапка сайта: одинаковая на всех страницах -->
     <header class="header">
         <div class="container header-content">
             <a class="logo" href="./index.html">Мир Путешествий</a>
 
+            <!-- Главное меню сайта -->
             <nav class="menu">
                 <a href="./index.html">Главная</a>
                 <a href="./tours.html">Туры</a>
@@ -21,7 +27,10 @@
         </div>
     </header>
 
+    <!-- Основное содержимое страницы контактов -->
     <main>
+
+        <!-- Верхний блок страницы -->
         <section class="page-top">
             <div class="container">
                 <h1>Контакты и заявка на тур</h1>
@@ -29,32 +38,45 @@
             </div>
         </section>
 
+        <!-- Раздел с контактами и картой -->
         <section class="section">
             <div class="container contact-block">
+
+                <!-- Контактная информация -->
                 <article class="contact-info">
                     <h2>Контакты</h2>
                     <p><strong>Адрес:</strong> г. Москва, ул. Тверская, 10</p>
                     <p><strong>Телефон:</strong> <a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
                     <p><strong>Email:</strong> <a href="mailto:travel@example.com">travel@example.com</a></p>
 
+                    <!-- Ссылки на социальные сети -->
                     <div class="social-links">
-                        <a href="https://vk.com/example" target="_blank">VK</a>
-                        <a href="https://ok.ru/example" target="_blank">Одноклассники</a>
+                        <a href="https://vk.com/example" target="_blank" rel="noopener noreferrer">VK</a>
+                        <a href="https://ok.ru/example" target="_blank" rel="noopener noreferrer">Одноклассники</a>
                     </div>
                 </article>
 
+                <!-- Встроенная карта -->
                 <div class="map-box">
-                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.615560%2C55.760186&z=14" title="Карта офиса Мир Путешествий"></iframe>
+                    <iframe 
+                        src="https://yandex.ru/map-widget/v1/?ll=37.615560%2C55.760186&z=14" 
+                        title="Карта офиса Мир Путешествий">
+                    </iframe>
                 </div>
             </div>
         </section>
 
+        <!-- Раздел с формой заявки -->
         <section class="section section-light" id="request">
             <div class="container">
                 <h2>Форма подбора тура</h2>
                 <p class="section-text">Оставьте заявку, и мы подберем подходящий вариант.</p>
 
+                <!-- Форма заявки -->
+                <!-- JavaScript не используется. Форма отправляется через mailto -->
                 <form class="request-form" action="mailto:travel@example.com" method="post" enctype="text/plain">
+
+                    <!-- Первая строка формы -->
                     <div class="form-row">
                         <div class="form-field">
                             <label for="name">Имя</label>
@@ -67,6 +89,7 @@
                         </div>
                     </div>
 
+                    <!-- Вторая строка формы -->
                     <div class="form-row">
                         <div class="form-field">
                             <label for="email">Email</label>
@@ -79,6 +102,7 @@
                         </div>
                     </div>
 
+                    <!-- Третья строка формы -->
                     <div class="form-row">
                         <div class="form-field">
                             <label for="people">Количество человек</label>
@@ -91,17 +115,20 @@
                         </div>
                     </div>
 
+                    <!-- Поле для комментария -->
                     <div class="form-field">
                         <label for="comment">Комментарий</label>
                         <textarea id="comment" name="Комментарий" rows="5" placeholder="Расскажите о ваших пожеланиях"></textarea>
                     </div>
 
+                    <!-- Кнопка отправки формы -->
                     <button class="button form-button" type="submit">Отправить заявку</button>
                 </form>
             </div>
         </section>
     </main>
 
+    <!-- Подвал сайта -->
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-about">
@@ -110,15 +137,17 @@
                 <p>© 2026 Мир Путешествий. Все права защищены.</p>
             </div>
 
+            <!-- Меню в подвале -->
             <nav class="footer-menu">
                 <a href="./index.html">Главная</a>
                 <a href="./tours.html">Туры</a>
                 <a href="./contacts.html">Контакты</a>
             </nav>
 
+            <!-- Ссылки на социальные сети -->
             <div class="footer-social">
-                <a href="https://vk.com/example" target="_blank">VK</a>
-                <a href="https://ok.ru/example" target="_blank">Одноклассники</a>
+                <a href="https://vk.com/example" target="_blank" rel="noopener noreferrer">VK</a>
+                <a href="https://ok.ru/example" target="_blank" rel="noopener noreferrer">Одноклассники</a>
             </div>
         </div>
     </footer>
