@@ -1,0 +1,620 @@
+/* Общие настройки для всех элементов */
+* {
+    box-sizing: border-box;
+}
+
+/* Общие стили страницы */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #17324d;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Общие стили ссылок */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Общие стили изображений */
+img {
+    max-width: 100%;
+}
+
+/* Контейнер ограничивает ширину содержимого */
+.container {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* Общий класс для больших секций */
+.section {
+    padding: 70px 0;
+}
+
+/* Светлый фон для отдельных секций */
+.section-light {
+    background-color: #f6f1e5;
+}
+
+/* Убираем верхние отступы у заголовков и абзацев */
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+/* Главный заголовок */
+h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+/* Заголовки разделов */
+h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+    color: #0d2b45;
+}
+
+/* Заголовки карточек */
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0d2b45;
+}
+
+/* Небольшой текст под заголовком */
+.section-text {
+    max-width: 620px;
+    margin-bottom: 30px;
+    color: #4b6175;
+}
+
+/* Общие стили кнопок */
+.button,
+.small-button {
+    display: inline-block;
+    background-color: #0088cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Большая кнопка */
+.button {
+    padding: 14px 24px;
+    font-size: 16px;
+}
+
+/* Маленькая кнопка */
+.small-button {
+    padding: 10px 18px;
+    font-size: 15px;
+}
+
+/* Эффект при наведении на кнопки */
+.button:hover,
+.small-button:hover {
+    background-color: #006da3;
+}
+
+/* Шапка сайта */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(13, 43, 69, 0.12);
+}
+
+/* Внутренняя часть шапки */
+.header-content {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* Логотип сайта */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d2b45;
+}
+
+/* Меню навигации */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    font-size: 16px;
+}
+
+/* Активная ссылка и наведение на ссылки меню */
+.menu a:hover,
+.active-link {
+    color: #0088cc;
+}
+
+/* Кнопка в шапке */
+.header-button {
+    white-space: nowrap;
+}
+
+/* Главный экран на главной странице */
+.hero {
+    padding: 80px 0;
+    background-color: #d9f1ff;
+}
+
+/* Контент главного экрана */
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Текстовая часть главного экрана */
+.hero-text {
+    flex: 1;
+}
+
+/* Описание на главном экране */
+.hero-text p {
+    max-width: 560px;
+    margin-bottom: 28px;
+    font-size: 20px;
+    color: #334d63;
+}
+
+/* Блок с главным изображением */
+.hero-image {
+    flex: 1;
+    overflow: hidden;
+    background-color: #f3d7a3;
+    border-radius: 18px;
+    box-shadow: 0 14px 35px rgba(13, 43, 69, 0.16);
+}
+
+/* Главное изображение */
+.hero-photo {
+    width: 100%;
+    height: 340px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Верхний блок на внутренних страницах */
+.page-top {
+    padding: 70px 0;
+    color: #0d2b45;
+    background-color: #d9f1ff;
+}
+
+/* Текст в верхнем блоке внутренних страниц */
+.page-top p {
+    max-width: 620px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #334d63;
+}
+
+/* Раздел "О нас" */
+.about-block {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* Колонки в разделе "О нас" */
+.about-block div {
+    flex: 1;
+}
+
+/* Карточка в разделе "О нас" */
+.about-card {
+    padding: 28px;
+    background-color: #f6f1e5;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(13, 43, 69, 0.1);
+}
+
+/* Сетка карточек туров */
+.tour-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* Карточка тура */
+.tour-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(13, 43, 69, 0.12);
+}
+
+/* Изображение тура */
+.tour-image {
+    width: 100%;
+    height: 170px;
+    display: block;
+    object-fit: cover;
+    background-color: #bde7ff;
+}
+
+/* Текстовая часть карточки тура */
+.tour-info {
+    padding: 22px;
+}
+
+/* Заголовок карточки тура */
+.tour-info h2 {
+    font-size: 24px;
+}
+
+/* Цена тура */
+.price {
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0088cc;
+}
+
+/* Сетка преимуществ */
+.benefit-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* Карточка преимущества */
+.benefit-card {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(13, 43, 69, 0.1);
+}
+
+/* Кастомный декоративный блок */
+.quote-section {
+    padding: 55px 0;
+    background-color: #0d2b45;
+}
+
+/* Внутренняя часть декоративного блока */
+.quote-box {
+    padding: 34px;
+    text-align: center;
+    background-color: #f3d7a3;
+    border: 3px solid #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Текст в декоративном блоке */
+.quote-box p {
+    margin-bottom: 0;
+    font-size: 34px;
+    font-weight: 700;
+    color: #0d2b45;
+}
+
+/* Сетка галереи */
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Карточка галереи */
+.gallery-card {
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(13, 43, 69, 0.1);
+    transition: 0.2s;
+}
+
+/* Эффект при наведении на карточку галереи */
+.gallery-card:hover {
+    box-shadow: 0 14px 30px rgba(13, 43, 69, 0.2);
+    transform: scale(1.03);
+}
+
+/* Изображение в галерее */
+.gallery-image {
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 16px;
+    background-color: #f3d7a3;
+    border-radius: 12px;
+}
+
+/* Заголовок карточки галереи */
+.gallery-card h3 {
+    margin-bottom: 0;
+}
+
+/* Сетка этапов работы */
+.step-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* Карточка этапа */
+.step-card {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(13, 43, 69, 0.1);
+}
+
+/* Номер этапа */
+.step-card span {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #0088cc;
+    border-radius: 50%;
+}
+
+/* Сетка отзывов */
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Карточка отзыва */
+.review-card {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(13, 43, 69, 0.1);
+}
+
+/* Направление путешествия в отзыве */
+.review-place {
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #0088cc;
+}
+
+/* Блок контактов и карты */
+.contact-block {
+    display: flex;
+    gap: 30px;
+}
+
+/* Одинаковая ширина для контактов и карты */
+.contact-info,
+.map-box {
+    flex: 1;
+}
+
+/* Карточка с контактной информацией */
+.contact-info {
+    padding: 28px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(13, 43, 69, 0.1);
+}
+
+/* Ссылки в блоке контактов */
+.contact-info a {
+    color: #0088cc;
+}
+
+/* Ссылки на социальные сети */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+/* Кнопки социальных сетей */
+.social-links a {
+    padding: 10px 16px;
+    color: #ffffff;
+    background-color: #0d2b45;
+    border-radius: 8px;
+}
+
+/* Блок с картой */
+.map-box {
+    min-height: 320px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(13, 43, 69, 0.1);
+}
+
+/* Встроенная карта */
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border: 0;
+}
+
+/* Форма заявки */
+.request-form {
+    max-width: 850px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(13, 43, 69, 0.14);
+}
+
+/* Строка формы */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Поле формы */
+.form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Подпись к полю формы */
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Поля ввода и текстовое поле */
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 13px 14px;
+    font: inherit;
+    color: #17324d;
+    border: 1px solid #c9d6e1;
+    border-radius: 8px;
+}
+
+/* Текстовое поле можно растягивать только по вертикали */
+.form-field textarea {
+    resize: vertical;
+}
+
+/* Выделение поля при нажатии */
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: #0088cc;
+}
+
+/* Кнопка формы */
+.form-button {
+    margin-top: 4px;
+}
+
+/* Подвал сайта */
+.footer {
+    padding: 40px 0;
+    color: #ffffff;
+    background-color: #0d2b45;
+}
+
+/* Внутренняя часть подвала */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Текстовая часть подвала */
+.footer-about {
+    max-width: 360px;
+}
+
+/* Заголовок в подвале */
+.footer-about h2 {
+    color: #ffffff;
+}
+
+/* Меню и социальные сети в подвале */
+.footer-menu,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Эффект при наведении на ссылки в подвале */
+.footer-menu a:hover,
+.footer-social a:hover {
+    color: #f3d7a3;
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 1000px) {
+    .header-content,
+    .hero-content,
+    .about-block,
+    .contact-block,
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour-list,
+    .benefit-list,
+    .step-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-list,
+    .review-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-button {
+        align-self: flex-start;
+    }
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 600px) {
+    .section {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .hero,
+    .page-top {
+        padding: 55px 0;
+    }
+
+    .hero-photo {
+        height: 230px;
+    }
+
+    .tour-list,
+    .benefit-list,
+    .gallery-list,
+    .step-list,
+    .review-list {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .request-form {
+        padding: 22px;
+    }
+
+    .quote-box p {
+        font-size: 26px;
+    }
+}

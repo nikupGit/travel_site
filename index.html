@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Настройки страницы -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Путешествий — главная</title>
+
+    <!-- Подключение общего CSS-файла -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта: логотип, меню и кнопка -->
+    <header class="header">
+        <div class="container header-content">
+            <a class="logo" href="index.html">Мир Путешествий</a>
+
+            <!-- Главное меню сайта -->
+            <nav class="menu">
+                <a class="active-link" href="index.html">Главная</a>
+                <a href="tours.html">Туры</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <a class="button header-button" href="contacts.html">Подобрать тур</a>
+        </div>
+    </header>
+
+    <!-- Основное содержимое главной страницы -->
+    <main>
+
+        <!-- Главный экран сайта -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Откройте мир вместе с нами</h1>
+                    <p>Подбираем туры, отели и маршруты для комфортного путешествия</p>
+                    <a class="button" href="tours.html">Смотреть туры</a>
+                </div>
+
+                <!-- Главное изображение сайта -->
+                <!-- Изображение должно находиться в папке assets с именем hero.jpg -->
+                <div class="hero-image">
+                    <img class="hero-photo" src="assets/hero.jpg" alt="Путешествие у моря">
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "О нас" -->
+        <section class="section">
+            <div class="container about-block">
+                <div>
+                    <h2>О нас</h2>
+                    <p>
+                        «Мир Путешествий» — туристическое агентство, которое помогает
+                        подобрать туры для спокойного отдыха, семейных поездок и
+                        интересных экскурсий.
+                    </p>
+                    <p>
+                        Мы внимательно относимся к пожеланиям клиентов, предлагаем
+                        понятные варианты и помогаем подготовиться к путешествию.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Наша задача</h3>
+                    <p>Сделать выбор тура простым, приятным и надежным.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел преимуществ компании -->
+        <section class="section section-light">
+            <div class="container">
+                <h2>Преимущества</h2>
+
+                <div class="benefit-list">
+                    <article class="benefit-card">
+                        <h3>Индивидуальный подбор тура</h3>
+                        <p>Учитываем бюджет, даты, интересы и пожелания каждого клиента.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <h3>Поддержка клиентов</h3>
+                        <p>Помогаем до поездки, во время отдыха и после возвращения.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <h3>Выгодные цены</h3>
+                        <p>Подбираем предложения от надежных партнеров и туроператоров.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <h3>Проверенные отели</h3>
+                        <p>Советуем варианты с хорошими отзывами и удобным расположением.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кастомный декоративный HTML/CSS-блок -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="quote-box">
+                    <p>Путешествие начинается с мечты</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел с этапами работы -->
+        <section class="section">
+            <div class="container">
+                <h2>Этапы работы</h2>
+
+                <div class="step-list">
+                    <article class="step-card">
+                        <span>1</span>
+                        <h3>Вы оставляете заявку</h3>
+                        <p>Заполняете форму и рассказываете, какой отдых вам нужен.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span>2</span>
+                        <h3>Менеджер подбирает варианты</h3>
+                        <p>Мы сравниваем туры и предлагаем подходящие направления.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span>3</span>
+                        <h3>Мы оформляем документы</h3>
+                        <p>Помогаем с бронированием, оплатой и нужными документами.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span>4</span>
+                        <h3>Вы отправляетесь в путешествие</h3>
+                        <p>Получаете маршрут, билеты и спокойно готовитесь к поездке.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h2>Мир Путешествий</h2>
+                <p>Туристическое агентство для комфортного и яркого отдыха.</p>
+                <p>© 2026 Мир Путешествий. Все права защищены.</p>
+            </div>
+
+            <!-- Меню в подвале -->
+            <nav class="footer-menu">
+                <a href="index.html">Главная</a>
+                <a href="tours.html">Туры</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <!-- Ссылки на социальные сети -->
+            <div class="footer-social">
+                <a href="https://vk.com/example" target="_blank" rel="noopener noreferrer">VK</a>
+                <a href="https://ok.ru/example" target="_blank" rel="noopener noreferrer">Одноклассники</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

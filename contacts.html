@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Путешествий — контакты</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a class="logo" href="./index.html">Мир Путешествий</a>
+
+            <nav class="menu">
+                <a href="./index.html">Главная</a>
+                <a href="./tours.html">Туры</a>
+                <a class="active-link" href="./contacts.html">Контакты</a>
+            </nav>
+
+            <a class="button header-button" href="#request">Подобрать тур</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-top">
+            <div class="container">
+                <h1>Контакты и заявка на тур</h1>
+                <p>Свяжитесь с нами или заполните форму для подбора путешествия.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-block">
+                <article class="contact-info">
+                    <h2>Контакты</h2>
+                    <p><strong>Адрес:</strong> г. Москва, ул. Тверская, 10</p>
+                    <p><strong>Телефон:</strong> <a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:travel@example.com">travel@example.com</a></p>
+
+                    <div class="social-links">
+                        <a href="https://vk.com/example" target="_blank">VK</a>
+                        <a href="https://ok.ru/example" target="_blank">Одноклассники</a>
+                    </div>
+                </article>
+
+                <div class="map-box">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.615560%2C55.760186&z=14" title="Карта офиса Мир Путешествий"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light" id="request">
+            <div class="container">
+                <h2>Форма подбора тура</h2>
+                <p class="section-text">Оставьте заявку, и мы подберем подходящий вариант.</p>
+
+                <form class="request-form" action="mailto:travel@example.com" method="post" enctype="text/plain">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="Имя" placeholder="Ваше имя" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="Телефон" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" placeholder="travel@example.com" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="country">Желаемая страна</label>
+                            <input type="text" id="country" name="Желаемая страна" placeholder="Например, Италия" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="people">Количество человек</label>
+                            <input type="number" id="people" name="Количество человек" min="1" placeholder="2" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="date">Дата поездки</label>
+                            <input type="date" id="date" name="Дата поездки" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="comment">Комментарий</label>
+                        <textarea id="comment" name="Комментарий" rows="5" placeholder="Расскажите о ваших пожеланиях"></textarea>
+                    </div>
+
+                    <button class="button form-button" type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h2>Мир Путешествий</h2>
+                <p>Туристическое агентство для комфортного и яркого отдыха.</p>
+                <p>© 2026 Мир Путешествий. Все права защищены.</p>
+            </div>
+
+            <nav class="footer-menu">
+                <a href="./index.html">Главная</a>
+                <a href="./tours.html">Туры</a>
+                <a href="./contacts.html">Контакты</a>
+            </nav>
+
+            <div class="footer-social">
+                <a href="https://vk.com/example" target="_blank">VK</a>
+                <a href="https://ok.ru/example" target="_blank">Одноклассники</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
